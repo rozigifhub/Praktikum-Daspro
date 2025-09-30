@@ -26,6 +26,7 @@ public class nestedUjianSkripsi23 {
         }
         System.out.println(pesan);
         sc.close();
+        
     }
 
     
