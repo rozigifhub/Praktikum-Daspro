@@ -104,10 +104,10 @@ public class CM1_Muhammad_Zainur_Roziqin {
         double rataTotal = (rata1 + rata2) / 2;
         String statusSemester;
 
-        if (status1.equals("LULUS") && status2.equals("LULUS")) {
-            statusSemester = "LULUS";
+        if (rataTotal >= 70) {
+            statusSemester = "LULUS (Rata-Rata >= 70)";
         } else {
-            statusSemester = "TIDAK LULUS";
+            statusSemester = "TIDAK LULUS (Rata-Rata < 70)";
         }
 
         // Output hasil
