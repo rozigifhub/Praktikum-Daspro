@@ -21,6 +21,7 @@ public class siakadWhile23 {
             // Menentukan kategori huruf
             if (nilai > 80 && nilai <= 100) {
                 System.out.println("Nilai huruf: A");
+                System.out.println("Bagus, pertahankan nilainya!");
             } else if (nilai > 73 && nilai <= 80) {
                 System.out.println("Nilai huruf: B+");
             } else if (nilai > 65 && nilai <= 73) {
