@@ -9,7 +9,8 @@ public class nilaiKelompok23 {
         int i = 1;             
         double totalNilai;      
         double rataNilai;       
-
+        double nilaiTertinggi = 0;
+        int kelompokTertinggi = 0;
         while (i <= 6) {
             totalNilai = 0; 
             System.out.println("\nKelompok " + i);
@@ -24,10 +25,20 @@ public class nilaiKelompok23 {
 
             rataNilai = totalNilai / 5;
             System.out.println("Rata-rata nilai kelompok " + i + " = " + rataNilai);
+
+            // Mencari nilai tertinggi
+            if (rataNilai > nilaiTertinggi) {
+                nilaiTertinggi = rataNilai;
+                kelompokTertinggi = i;
+            }
+
             i++;
         }
 
         System.out.println("\n=== Semua kelompok telah dinilai ===");
+        System.out.println("\n=== HASIL AKHIR ===");
+        System.out.println("Kelompok dengan rata-rata tertinggi adalah kelompok " + kelompokTertinggi);
+        System.out.println("Dengan rata-rata nilai = " + nilaiTertinggi);
     }
 }
 
