@@ -8,8 +8,8 @@ public class ArrayNilai23 {
         int[] nilaiAkhir = new int[10];
 
         // Input nilai ke dalam array
-        for (int i = 0; i < 10; i++) {
-            System.out.print("Masukkan nilai akhir ke-" + (i + 1) + ": ");
+        for (int i = 0; i < nilaiAkhir.length; i++) {
+            System.out.print("Masukkan nilai akhir ke-" + i + ": ");
             nilaiAkhir[i] = sc.nextInt();
         }
 
@@ -17,8 +17,12 @@ public class ArrayNilai23 {
         System.out.println("Daftar nilai akhir mahasiswa:");
 
         // Menampilkan isi array
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Nilai akhir ke-" + (i + 1) + " = " + nilaiAkhir[i]);
+        for (int i = 0; i < nilaiAkhir.length; i++) {
+            if (nilaiAkhir[i] > 70){
+                System.out.println("Mahasiswa ke-" + i + " Lulus");
+            }else{
+                System.out.println("Mahasiswa ke-" + i + " Tidak Lulus");
+            }
         }
     }
 }
